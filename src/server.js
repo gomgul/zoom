@@ -10,7 +10,7 @@ app.use("/public", express.static(__dirname + "/public"));
 app.get("/", (req,res) => res.render("home"));
 app.get("/*", (_,res) => res.redirect("/"));
 
-const handleListen = () => console.log(`Listening on http://localhost:5000 🐠`);
+const handleListen = () => console.log(`Listening on http://localhost:5000 🎴`);
 
 const server = http.createServer(app);
 const wss= new WebSocket.Server({ server });
